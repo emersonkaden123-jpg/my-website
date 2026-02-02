@@ -9,6 +9,46 @@
     <header>
         <h1>The About page</h1>
     </header>
-    
+    <section>
+        <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+            <div>
+                <label for="MyName">Name:</label>
+                <input type="text" name="MyName" id="mynName">
+            </div>
+            <div>
+                <label for="myEmail">Email:</label>
+                <input type="text" name="myEmail" id="myEmail">
+            </div>
+            Choose the browsers you use <br>
+            <div>
+                <input type="checkbox" name="go" id="go" value="yes">
+                <lable for="go">Google Chrome</lable>
+            </div>
+            <div>
+                <input type="checkbox" name="firefox" id="firefox" value="yes">
+                <lable for="firefox">FireFox</lable>
+            </div>
+            <div>
+                <input type="checkbox" name="edge" id="edge" value="yes">
+                <lable for="edge">Microsoft Edge</lable>
+            </div>
+            Would you like to be on our mailing list<br>
+            <div>
+                <div>
+                    <input type="radio" name="mailinglist" id="mailinglist" value="yes">
+                    <label for="mailinglist">Yes</label>
+                </div>
+                    <input type="radio" name="mailinglist" id="mailinglistno" value="yes">
+                    <label for="mailinglistno">No</label>
+                </div>
+            </div>
+            <div>
+                <span>Comments:</span>
+                <textarea></textarea>
+            </div>
+            <input type="submit" value="submit">
+            <input type="reset" value="redo">
+        </form>
+    </section>
 </body>
 </html>
