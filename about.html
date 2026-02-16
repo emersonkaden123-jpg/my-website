@@ -4,51 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
 </head>
 <body>
+    <div class="container">
     <header>
         <h1>The About page</h1>
     </header>
     <section>
         <form method="post" action="https://webdevbasics.net/scripts/demo.php">
-            <div>
-                <label for="MyName">Name:</label>
-                <input type="text" name="MyName" id="mynName">
+            <div class="mb-3">
+                <label for="MyName" class="form-label">Name:</label>
+                <input type="text" name="MyName" id="mynName" class="form-control">
             </div>
-            <div>
-                <label for="myEmail">Email:</label>
-                <input type="text" name="myEmail" id="myEmail">
+            <div class="mb-3">
+                <label for="myEmail" class="form-label">Email:</label>
+                <input type="text" name="myEmail" id="myEmail" class="form-control">
             </div>
             Choose the browsers you use <br>
-            <div>
-                <input type="checkbox" name="go" id="go" value="yes">
-                <lable for="go">Google Chrome</lable>
+            <div class="mb-3" form-check>
+                <input type="checkbox" name="go" id="go" value="yes" class="form-check-input">
+                <lable for="go" class="form-check-label"  >Google Chrome</lable>
             </div>
-            <div>
-                <input type="checkbox" name="firefox" id="firefox" value="yes">
-                <lable for="firefox">FireFox</lable>
+            <div class="mb-3" form-check>
+                <input type="checkbox" name="firefox" id="firefox" value="yes" class="form-check-input">
+                <lable for="firefox" class="form-check-label" >FireFox</lable>
             </div>
-            <div>
-                <input type="checkbox" name="edge" id="edge" value="yes">
-                <lable for="edge">Microsoft Edge</lable>
+            <div class="mb-3" form-check>
+                <input type="checkbox" name="edge" id="edge" value="yes" class="form-check-input">
+                <lable for="edge" class="form-check-label" >Microsoft Edge</lable>
             </div>
             Would you like to be on our mailing list<br>
-            <div>
-                <div>
-                    <input type="radio" name="mailinglist" id="mailinglist" value="yes">
-                    <label for="mailinglist">Yes</label>
+            <div class="mb-3">
+                <div class="form-check">
+                    <input type="radio" name="mailinglist" id="mailinglist" value="yes" class="form-check-input">
+                    <label for="mailinglist" class="form-check-label"> Yes</label>
                 </div>
-                    <input type="radio" name="mailinglist" id="mailinglistno" value="yes">
-                    <label for="mailinglistno">No</label>
+                    <input type="radio" name="mailinglist" id="mailinglistno" value="yes" class="form-check-input">
+                    <label for="mailinglistno"class="form-check-label">No</label>
                 </div>
             </div>
-            <div>
-                <span>Comments:</span>
-                <textarea></textarea>
+            <div class="mb- input-group">
+                <span class="input-group-text">Comments:</span>
+                <textarea class="form-control" aria-label="comments"></textarea>
             </div>
-            <input type="submit" value="submit">
-            <input type="reset" value="redo">
+            <input type="submit" value="submit" class="btn btn-primary">
+            <input type="reset" value="redo" class="btn btn-secondary">
         </form>
     </section>
+</div>
 </body>
 </html>
